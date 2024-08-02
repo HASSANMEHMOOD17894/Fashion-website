@@ -1,12 +1,8 @@
-  
- @font-face {
-    font-family:'BodoniFLF-BoldItalic.ttf';
-    src: url('fonts/BodoniFLF-BoldItalic.ttf') format('truetype'); /* For TTF format */
-    /* Add other formats if available */
-    font-weight: normal;
+body {
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
     font-style: normal;
-}
- 
+  }
   
                                          /* PAGE 1 CONTENT */
    /* Main nav bar*/
@@ -55,6 +51,7 @@
     flex-direction: row;
     justify-content:space-around;
 }
+
 .smallnav > button {
     width: 120px;
     height: 45px;
@@ -555,13 +552,13 @@ div.text > div > p{
     border-color: #ffffff;
 }
                             /* FOOTER */
-#end{
+.mainfoot , .fdiv5{
     background-color:#224F34;
 }                           
 .foot > div > h1{
     font-family: 'BodoniFLF-BoldItalic.ttf', sans-serif; 
     color:white;
-    font-size:35px;
+    font-size:45px;
     
 }
 .foot > div > h2{
@@ -581,9 +578,12 @@ div.text > div > p{
     margin-right: 184px;
     
     margin-top: 100px;
-    height:13.9cm;
-    border:1px solid rgb(255, 255, 255);
+    height:10.9cm;
+    /* border:1px solid rgb(255, 255, 255); */
 
+}
+.foot h3{
+    color: white;
 }
 #email{
     background-color: #224F34;
@@ -593,10 +593,14 @@ div.text > div > p{
     border-radius: 5px;
     cursor: pointer;
     border-color: #C2EFD4;
+
+}
+input::placeholder {
+    color: #ffffff; /* White color */
+    opacity: 1;
 }
 #submit{
     background-color:#a9d4ba ;
-    ;
     color:#224F34 ;
     width: 100px;
     padding: 10px;
@@ -605,3 +609,54 @@ div.text > div > p{
     transform: translate(-104px, 0px) ;
 
 }
+.fdiv2{
+    margin-top: 30px;
+}
+.fdiv3{
+    margin-top: 30px;
+}
+.fdiv4{
+    margin-top: 30px;
+}
+.fdiv5{
+    height: 50px;
+    border: 2px;
+    background-color: #224F34;
+    flex-direction: row;
+    margin-left: 90px;
+    margin-right: 184px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.fdiv5 > ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    /* justify-content: flex-end; */
+    gap: 20px;
+    color: white;
+    transform: translateY(-15px);
+}
+.hr{
+    width: 876px;
+}
+#line{
+    background-color: #a9d4ba;
+    height: 3px;
+    width: 865px;
+}
+
+.animation_slide{
+    animation: slideUp 1s;
+  
+}
+    @keyframes slideUp {
+        from{
+            transform: translateY(-100%);
+        }
+        to{
+            transform: translateY(0);
+          
+        }
+    }
